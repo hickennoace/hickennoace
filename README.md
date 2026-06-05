@@ -167,12 +167,34 @@ A **7-page Power BI report** built from roughly **853,000** LAPD incidents (2020
 
 ---
 
-### 📊 GitHub at a glance
+### 📊 What's in here
 
 <p align="center">
-  <!-- Self-rendered daily by .github/workflows/metrics.yml — committed to the repo, so it always loads. -->
-  <img src="./github-metrics.svg" alt="Daniel's GitHub metrics">
+  <img src="https://img.shields.io/badge/Public%20projects-4-2563eb?style=flat-square">
+  <img src="https://img.shields.io/badge/Data%20%26%20finance-3%20projects-1f4e79?style=flat-square">
+  <img src="https://img.shields.io/badge/Web-1%20project-3178C6?style=flat-square">
+  <img src="https://img.shields.io/badge/Built%20on-real%20datasets-2ea44f?style=flat-square">
 </p>
+
+<table align="center">
+  <tr>
+    <th align="left">Domain</th>
+    <th align="left">What lives here</th>
+    <th align="left">Built with</th>
+  </tr>
+  <tr>
+    <td>🧪&nbsp;Data&nbsp;&amp;&nbsp;finance</td>
+    <td>Macro/crypto regression, customer-revenue analytics, a 7-page crime report</td>
+    <td>Python · Jupyter · pandas · Power BI · SQL</td>
+  </tr>
+  <tr>
+    <td>🌐&nbsp;Web</td>
+    <td>My developer portfolio, designed and shipped end to end</td>
+    <td>TypeScript · Next.js</td>
+  </tr>
+</table>
+
+<p align="center"><sub>Small, deliberate public footprint — every repo is a finished analysis with a conclusion, not a sandbox.</sub></p>
 
 ---
 
