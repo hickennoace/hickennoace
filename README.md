@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <i>I don't build charts to look at — I build models, dashboards, and research<br>someone actually reads on a Monday morning.</i>
+  <i>I don't build charts to look at → I build models, dashboards, and research<br>someone actually reads on a Monday morning.</i>
 </p>
 
 <p align="center">
