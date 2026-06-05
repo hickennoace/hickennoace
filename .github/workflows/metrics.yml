@@ -1,21 +1,15 @@
-# Renders a rich stats SVG (github-metrics.svg) and commits it to this repo,
-# so the "GitHub at a glance" image on the profile ALWAYS loads (no third-party
+# Renders a stats SVG (github-metrics.svg) and commits it to this repo, so the
+# "GitHub at a glance" image on the profile ALWAYS loads (no third-party
 # rendering at view time). Powered by lowlighter/metrics.
 #
-# One-time setup:
-#   1. Create a Personal Access Token (classic) with scopes: repo, read:user.
-#      https://github.com/settings/tokens  ->  Generate new token (classic)
-#   2. Add it to this repo as a secret named METRICS_TOKEN:
-#      Settings -> Secrets and variables -> Actions -> New repository secret
-#   3. Run the workflow once: Actions tab -> "Metrics" -> Run workflow.
+# Zero setup: it uses the built-in GITHUB_TOKEN, so no personal token/secret is
+# required. (Stats are based on public activity.) It runs on every push to this
+# file, daily on a schedule, and can be run manually from the Actions tab.
 name: Metrics
 
 on:
-  # Refresh every day at 06:00 UTC
   schedule: [{ cron: "0 6 * * *" }]
-  # Allow manual runs from the Actions tab
   workflow_dispatch:
-  # Regenerate whenever this config changes
   push: { branches: ["main"], paths: [".github/workflows/metrics.yml"] }
 
 permissions:
@@ -28,28 +22,27 @@ jobs:
       - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: hickennoace
           filename: github-metrics.svg
           template: classic
           config_timezone: Asia/Jerusalem
-          base: header, activity, community, repositories, metadata
+          # Don't abort the whole render if a single plugin can't fetch data
+          plugins_errors_fatal: no
+          base: header, activity, repositories, metadata
 
-          # Most-used languages, with private repos counted in
+          # Most-used languages across public repositories
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
           plugin_languages_limit: 8
           plugin_languages_details: bytes-size, percentage
 
-          # Isometric full-year commit calendar (the eye-catching 3D one)
+          # Isometric commit calendar (the eye-catching 3D one)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # When / how I code
+          # When I tend to be active
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-
-          # Lines of code changed
-          plugin_lines: yes
