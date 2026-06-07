@@ -118,11 +118,25 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 
 | Project | The question it answers | Stack |
 |---|---|---|
+| 🚀&nbsp;**[MyAnalyst](https://quantia-blond.vercel.app)** <sub>(flagship · live demo)</sub> | Can anyone — with zero BI skill — drop in a spreadsheet and get a clean, fully-explained analytical dashboard in seconds? | Next.js · TypeScript · client-side analysis engine |
 | **[Ethereum&nbsp;Macro&nbsp;Analysis](https://github.com/hickennoace/Ethereum-Macro-Analysis)** | How does ETH-USD really move (2021–2026) vs. BTC, the NASDAQ-100 & the dollar? | Python · pandas · NumPy · SciPy · yfinance |
 | **[Craftiverse&nbsp;Customer&nbsp;Behaviour](https://github.com/hickennoace/CustomerBehaviour)** | Where does a store's revenue come from - and where does it *leak*? | Python · SQLite · Power BI |
 | **[L.A.&nbsp;Crime&nbsp;Rate&nbsp;(Power&nbsp;BI)](https://github.com/hickennoace/LA-Crime-Rate-PowerBI)** | What do ~853k LAPD incidents reveal by area, time, weapon & case status? | Power BI · DAX · Power Query |
 | **[Car&nbsp;Company&nbsp;(Power&nbsp;BI)](https://github.com/hickennoace/Car-Company)** | For a car importer - where's the revenue, and where does it leak across sales, lost leads & inventory? | Power BI · DAX · TMDL · Python |
 | **[Developer&nbsp;Portfolio](https://github.com/hickennoace/Portfolio)** | My personal site, designed and built end to end. | Next.js · TypeScript |
+
+<details open>
+<summary><b>🚀 MyAnalyst - deeper look</b></summary>
+
+<br>
+
+**My flagship project — an AI-powered, zero-skill-required alternative to Power BI / Tableau.** Upload a CSV / Excel / JSON file and get back a clean, beautiful, fully-explained analytical dashboard in seconds — no mapping, no config, no formulas. The engine **auto-types and cleans** every column (dedup, missing-value handling, outlier flagging), **infers the domain** of the data (financial vs. operational vs. marketing), then **ranks and computes the KPIs that matter**, picks the right statistics (regression, time-series forecasting, correlation, anomaly detection) and **writes the conclusions in plain language** — grounded in the actual numbers, not vibes. There's also an on-demand "generate a graph" builder that takes plain-English prompts.
+
+The thing I'm proudest of is the **privacy-first architecture**: the full analysis engine runs **client-side in the browser** — no backend, no API key, your raw rows never leave the page. The insight narrator sits behind a pluggable `InsightProvider` interface, so a cloud or self-hosted LLM can drop in later for the narrative layer **without ever sending the underlying records** — only schema and small aggregates. Built with **Next.js + TypeScript**, shipped on Vercel; the broader blueprint (FastAPI compute tier, Postgres with Row-Level Security, multi-tenant SaaS) is the target architecture for scale.
+
+🔗 **[Try the live demo →](https://quantia-blond.vercel.app)** &nbsp;·&nbsp; <sub>(source repo is private for now)</sub>
+
+</details>
 
 <details>
 <summary><b>📈 Ethereum Macro Analysis - deeper look</b></summary>
@@ -187,9 +201,10 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
 ### 📊 What's in here
 
 <p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Flagship-MyAnalyst-7c3aed?style=flat-square">
   <img src="https://img.shields.io/badge/Public%20projects-5-2563eb?style=flat-square">
   <img src="https://img.shields.io/badge/Data%20%26%20finance-4%20projects-1f4e79?style=flat-square">
-  <img src="https://img.shields.io/badge/Web-1%20project-3178C6?style=flat-square">
+  <img src="https://img.shields.io/badge/Web%20%26%20product-2%20projects-3178C6?style=flat-square">
   <img src="https://img.shields.io/badge/Built%20on-real%20datasets-2ea44f?style=flat-square">
 </p>
 
@@ -205,8 +220,8 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
     <td>Python · Jupyter · pandas · Power BI · SQL · DAX</td>
   </tr>
   <tr>
-    <td>🌐&nbsp;Web</td>
-    <td>My developer portfolio, designed and shipped end to end</td>
+    <td>🌐&nbsp;Web&nbsp;&amp;&nbsp;product</td>
+    <td><b>MyAnalyst</b> - an AI auto-analyst that turns a spreadsheet into a full dashboard, plus my developer portfolio, designed and shipped end to end</td>
     <td>TypeScript · Next.js</td>
   </tr>
 </table>
