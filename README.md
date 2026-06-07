@@ -118,7 +118,7 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 
 | Project | The question it answers | Stack |
 |---|---|---|
-| 🚀&nbsp;**[MyAnalyst](https://myanalyst.net)** <sub>(flagship · live demo)</sub> | Can anyone — with zero BI skill — drop in a spreadsheet and get a clean, fully-explained analytical dashboard in seconds? | Next.js · TypeScript · client-side analysis engine |
+| 🚀&nbsp;**[MyAnalyst](https://myanalyst.net)** | Can anyone — with zero BI skill — drop in a spreadsheet and get a clean, fully-explained dashboard *and* an "ask your data" analyst, in seconds? | Next.js · TypeScript · Tailwind · ECharts · client-side analysis engine |
 | **[Ethereum&nbsp;Macro&nbsp;Analysis](https://github.com/hickennoace/Ethereum-Macro-Analysis)** | How does ETH-USD really move (2021–2026) vs. BTC, the NASDAQ-100 & the dollar? | Python · pandas · NumPy · SciPy · yfinance |
 | **[Craftiverse&nbsp;Customer&nbsp;Behaviour](https://github.com/hickennoace/CustomerBehaviour)** | Where does a store's revenue come from - and where does it *leak*? | Python · SQLite · Power BI |
 | **[L.A.&nbsp;Crime&nbsp;Rate&nbsp;(Power&nbsp;BI)](https://github.com/hickennoace/LA-Crime-Rate-PowerBI)** | What do ~853k LAPD incidents reveal by area, time, weapon & case status? | Power BI · DAX · Power Query |
@@ -130,11 +130,13 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 
 <br>
 
-**My flagship project — an AI-powered, zero-skill-required alternative to Power BI / Tableau.** Upload a CSV / Excel / JSON file and get back a clean, beautiful, fully-explained analytical dashboard in seconds — no mapping, no config, no formulas. The engine **auto-types and cleans** every column (dedup, missing-value handling, outlier flagging), **infers the domain** of the data (financial vs. operational vs. marketing), then **ranks and computes the KPIs that matter**, picks the right statistics (regression, time-series forecasting, correlation, anomaly detection) and **writes the conclusions in plain language** — grounded in the actual numbers, not vibes. There's also an on-demand "generate a graph" builder that takes plain-English prompts.
+**An AI-powered, zero-skill-required alternative to Power BI / Tableau.** Upload a CSV / Excel / JSON / SQLite file and get back a clean, beautiful, fully-explained analytical dashboard in seconds — no mapping, no config, no formulas. The engine **auto-types and cleans** every column (dedup, missing-value handling, outlier flagging), scores the **data quality**, **infers the domain** (financial vs. operational vs. marketing), then **ranks the KPIs that matter** and runs the right statistics — regression, time-series with MoM/YoY, correlation, anomaly detection, k-means **segmentation**, cohort **retention**, and a multiple-regression **driver analysis** — and **writes the conclusions in plain language**, grounded in the actual numbers, not vibes.
 
-The thing I'm proudest of is the **privacy-first architecture**: the full analysis engine runs **client-side in the browser** — no backend, no API key, your raw rows never leave the page. The insight narrator sits behind a pluggable `InsightProvider` interface, so a cloud or self-hosted LLM can drop in later for the narrative layer **without ever sending the underlying records** — only schema and small aggregates. Built with **Next.js + TypeScript**, shipped on Vercel; the broader blueprint (FastAPI compute tier, Postgres with Row-Level Security, multi-tenant SaaS) is the target architecture for scale.
+On top of that you can **ask your data questions in plain English** (filters, comparisons, *"what's driving revenue?"*) and get an answer with the exact figures, a chart, and a "show the math" trail; **join multiple tables**; build any chart from a prompt; and export a polished PDF report.
 
-🔗 **[Try the live demo →](https://myanalyst.net)** &nbsp;·&nbsp; <sub>(source repo is private for now)</sub>
+The part I'm proudest of is the **privacy-first architecture**: the full analysis engine runs **client-side in the browser** — no backend, your raw rows never leave the page. The optional LLM narrator sits behind a pluggable `InsightProvider` interface, so it only ever sees **schema and small aggregates**, never the underlying records. Built with **Next.js, TypeScript, Tailwind CSS and Apache ECharts**, tested with **Vitest + Playwright**, and shipped on **Vercel**.
+
+🔗 **[Open MyAnalyst →](https://myanalyst.net)** &nbsp;·&nbsp; **[Source on GitHub →](https://github.com/hickennoace/MyAnalyst)**
 
 </details>
 
@@ -201,7 +203,7 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
 ### 📊 What's in here
 
 <p align="center">
-  <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Flagship-MyAnalyst-7c3aed?style=flat-square">
+  <img src="https://img.shields.io/badge/%F0%9F%9A%80%20MyAnalyst-open%20source-7c3aed?style=flat-square">
   <img src="https://img.shields.io/badge/Public%20projects-5-2563eb?style=flat-square">
   <img src="https://img.shields.io/badge/Data%20%26%20finance-4%20projects-1f4e79?style=flat-square">
   <img src="https://img.shields.io/badge/Web%20%26%20product-2%20projects-3178C6?style=flat-square">
