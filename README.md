@@ -118,7 +118,7 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 
 | Project | The question it answers | Stack |
 |---|---|---|
-| 🚀&nbsp;**[MyAnalyst](https://quantia-blond.vercel.app)** <sub>(flagship · live demo)</sub> | Can anyone — with zero BI skill — drop in a spreadsheet and get a clean, fully-explained analytical dashboard in seconds? | Next.js · TypeScript · client-side analysis engine |
+| 🚀&nbsp;**[MyAnalyst](https://myanalyst.net)** <sub>(flagship · live demo)</sub> | Can anyone — with zero BI skill — drop in a spreadsheet and get a clean, fully-explained analytical dashboard in seconds? | Next.js · TypeScript · client-side analysis engine |
 | **[Ethereum&nbsp;Macro&nbsp;Analysis](https://github.com/hickennoace/Ethereum-Macro-Analysis)** | How does ETH-USD really move (2021–2026) vs. BTC, the NASDAQ-100 & the dollar? | Python · pandas · NumPy · SciPy · yfinance |
 | **[Craftiverse&nbsp;Customer&nbsp;Behaviour](https://github.com/hickennoace/CustomerBehaviour)** | Where does a store's revenue come from - and where does it *leak*? | Python · SQLite · Power BI |
 | **[L.A.&nbsp;Crime&nbsp;Rate&nbsp;(Power&nbsp;BI)](https://github.com/hickennoace/LA-Crime-Rate-PowerBI)** | What do ~853k LAPD incidents reveal by area, time, weapon & case status? | Power BI · DAX · Power Query |
@@ -134,7 +134,7 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 
 The thing I'm proudest of is the **privacy-first architecture**: the full analysis engine runs **client-side in the browser** — no backend, no API key, your raw rows never leave the page. The insight narrator sits behind a pluggable `InsightProvider` interface, so a cloud or self-hosted LLM can drop in later for the narrative layer **without ever sending the underlying records** — only schema and small aggregates. Built with **Next.js + TypeScript**, shipped on Vercel; the broader blueprint (FastAPI compute tier, Postgres with Row-Level Security, multi-tenant SaaS) is the target architecture for scale.
 
-🔗 **[Try the live demo →](https://quantia-blond.vercel.app)** &nbsp;·&nbsp; <sub>(source repo is private for now)</sub>
+🔗 **[Try the live demo →](https://myanalyst.net)** &nbsp;·&nbsp; <sub>(source repo is private for now)</sub>
 
 </details>
 
