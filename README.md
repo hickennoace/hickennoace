@@ -230,8 +230,8 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
 
 <p align="center">
   <img src="https://img.shields.io/badge/%F0%9F%9A%80%20MyAnalyst-open%20source-7c3aed?style=flat-square">
-  <img src="https://img.shields.io/badge/Public%20projects-6-2563eb?style=flat-square">
-  <img src="https://img.shields.io/badge/Data%20%26%20finance-4%20projects-1f4e79?style=flat-square">
+  <img src="https://img.shields.io/badge/Public%20projects-7-2563eb?style=flat-square">
+  <img src="https://img.shields.io/badge/Data%20%26%20finance-5%20projects-1f4e79?style=flat-square">
   <img src="https://img.shields.io/badge/Web%20%26%20product-2%20projects-3178C6?style=flat-square">
   <img src="https://img.shields.io/badge/Built%20on-real%20datasets-2ea44f?style=flat-square">
 </p>
