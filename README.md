@@ -27,7 +27,7 @@
 
 I'm studying **Economics & Management** at the **Open University of Israel**, and I work with **Python, SQL, Power BI and advanced Excel** to answer questions that actually change a decision.
 
-What sets me apart isn't just the tooling - it's the path here. I went from an **IDF combat soldier** to coordinating a national military-prep program to **freelancing as an analyst and developer**. That mix taught me discipline, ownership, and how to make a clear call under pressure. I bring the same to data: less decoration, more *"here's what's going on and here's what to do about it."*
+What sets me apart is how I think: an analytical, numbers-first mind paired with a builder's instinct for technology. I read assets and businesses through **financial modelling, market & macro analysis, and statistics** - then **ship the tool that delivers the answer**, whether that's a dashboard, a regression model, or a full real-time web app. My focus is squarely **finance, data, and engineering**, and I'm fluent across the stack that turns a messy dataset into a decision. The discipline and ownership behind it trace back to my service in the **IDF (Nahal Brigade)**. Less decoration, more *"here's what's going on and here's what to do about it."*
 
 > 🔭 Currently sharpening **financial modelling**, **macro/market analysis**, and **BI reporting** - and shipping projects built on real, messy datasets.
 
@@ -56,7 +56,7 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 
 ### 🛠️ Toolbelt
 
-**Data, Analysis &amp; BI**
+**Data &amp; Finance**
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white">
@@ -74,14 +74,16 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
   <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white">
 </p>
 
-**Web &amp; Build** <sub>(I ship the things I analyse, too)</sub>
+**Web &amp; Product** <sub>(I ship the things I analyse, too)</sub>
 <p>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
+  <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white">
+  <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white">
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white">
 </p>
@@ -152,7 +154,7 @@ The part I care most about is **financial correctness**. Most apps compute a "we
 
 Under the hood it **aggregates multiple sources** and labels every number's provenance: **Yahoo Finance** (price / OHLCV), **CoinDesk** (crypto news), **FXStreet** (forex news), **Forex Factory** (economic calendar), and **Alternative.me** (crypto Fear & Greed). Live prices **stream over Server-Sent Events**; an AI layer (**Google Gemini**, with a deterministic fallback) writes a plain-language **recap of the latest headlines** - a summary, never a buy/sell signal. Rounding it out: a personal **watchlist**, **price alerts** via browser notifications, a ⌘K **command palette**, a multi-asset **compare** view, drag-to-reorder widgets, and a light/dark "Obsidian Terminal" theme. Built with **Next.js, TypeScript and Tailwind**, animated with **Motion**, and shipped on **Vercel**.
 
-🔗 **[Open TickerIO →](https://ticker-io.vercel.app)**
+🔗 **[Open TickerIO →](https://ticker-io.vercel.app)** &nbsp;·&nbsp; **[Source on GitHub →](https://github.com/hickennoace/TickerIO)**
 
 </details>
 
@@ -163,6 +165,8 @@ Under the hood it **aggregates multiple sources** and labels every number's prov
 
 A quantitative study of **ETH-USD over 2021–2026** against three benchmarks - **BTC, the NASDAQ-100, and the US dollar (DXY)**. It computes risk metrics, builds a cross-asset correlation matrix, and runs **multivariate OLS regression** to test how much of Ethereum's movement the macro picture explains. The point isn't "number go up" - it's *what ETH is correlated to, and when that relationship breaks.*
 
+🔗 **[Source on GitHub →](https://github.com/hickennoace/Ethereum-Macro-Analysis)**
+
 </details>
 
 <details>
@@ -171,6 +175,8 @@ A quantitative study of **ETH-USD over 2021–2026** against three benchmarks - 
 <br>
 
 A full revenue post-mortem for an online store: segmenting players, tracing **where the money actually comes from**, and quantifying the **leak - cart abandonment**. Data is wrangled in **Python**, modelled in **SQLite/SQL**, and surfaced in a **Power BI** dashboard, ending in concrete "what to do about it" recommendations.
+
+🔗 **[Source on GitHub →](https://github.com/hickennoace/CustomerBehaviour)**
 
 </details>
 
@@ -181,6 +187,8 @@ A full revenue post-mortem for an online store: segmenting players, tracing **wh
 
 A **7-page Power BI report** built from roughly **853,000** LAPD incidents (2020–late 2023): an executive overview, geographic & operational patterns, an hour × weekday heatmap, victim demographics, weapon and crime-type breakdowns, and case-status / investigation analysis - driven by a clean star-schema model and a library of **DAX measures** (YoY, rolling averages, reporting-lag, rankings).
 
+🔗 **[Source on GitHub →](https://github.com/hickennoace/LA-Crime-Rate-PowerBI)**
+
 </details>
 
 <details>
@@ -190,6 +198,8 @@ A **7-page Power BI report** built from roughly **853,000** LAPD incidents (2020
 
 A **5-page Power BI report** for *Premium Motors*, a fictional car importer, built in the version-controllable **PBIP / TMDL** format from four raw Excel workbooks (**5,000** sales, **2,159** lost leads, **23** models, a **60-person** team - all synthetic, generated by me). It tracks **₪2bn revenue / ₪389M realized profit (20.5% margin)**, then dissects **₪814M of lost pipeline** into addressable buckets - supply, price, competitor, and winnable-via-follow-up - with a **Win-Back Rate what-if** parameter that sizes recoverable revenue (~**₪203M** at 25%). Power Query rebuilds the financial columns, ~**31 DAX measures** sit underneath. The point isn't "what sold" - it's *where the money leaks and how to win it back.*
 
+🔗 **[Source on GitHub →](https://github.com/hickennoace/Car-Company)**
+
 </details>
 
 ---
@@ -197,7 +207,7 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
 ### 🧗 The path here
 
 ```text
-2020 ──● Combat soldier, IDF - Nahal Brigade        (discipline, operating under pressure)
+2020 ──● IDF - Nahal Brigade                         (discipline, operating under pressure)
 2022 ──● Military-prep program coordinator          (leadership, mentorship)
 2022 ──● Freelance Analyst & Developer  → today     (data analytics, web, plugins)
 2023 ──● Security & access control                  (protocols, reliability)
