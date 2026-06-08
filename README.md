@@ -118,6 +118,7 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 
 | Project | The question it answers | Stack |
 |---|---|---|
+| 📊&nbsp;**[TickerIO](https://ticker-io.vercel.app)** | Can a trader type one ticker - stock, crypto or forex - and get a live, prop-desk-grade read of the whole asset on a single page? | Next.js · TypeScript · Tailwind · TradingView · SSE · Gemini |
 | 🚀&nbsp;**[MyAnalyst](https://myanalyst.net)** | Can anyone - with zero BI skill - drop in a spreadsheet and get a clean, fully-explained dashboard *and* an "ask your data" analyst, in seconds? | Next.js · TypeScript · Tailwind · ECharts · client-side analysis engine |
 | **[Ethereum&nbsp;Macro&nbsp;Analysis](https://github.com/hickennoace/Ethereum-Macro-Analysis)** | How does ETH-USD really move (2021–2026) vs. BTC, the NASDAQ-100 & the dollar? | Python · pandas · NumPy · SciPy · yfinance |
 | **[Craftiverse&nbsp;Customer&nbsp;Behaviour](https://github.com/hickennoace/CustomerBehaviour)** | Where does a store's revenue come from - and where does it *leak*? | Python · SQLite · Power BI |
@@ -126,6 +127,21 @@ What sets me apart isn't just the tooling - it's the path here. I went from an *
 | **[Developer&nbsp;Portfolio](https://github.com/hickennoace/Portfolio)** | My personal site, designed and built end to end. | Next.js · TypeScript |
 
 <details open>
+<summary><b>📊 TickerIO - deeper look</b></summary>
+
+<br>
+
+**A real-time, all-in-one trading dashboard for any asset.** Type a ticker - a stock, a crypto coin, or an FX pair - and TickerIO assembles the whole picture on one page: a live **TradingView** chart, **anchored timeframe** performance, market psychology, an algorithmic trend read, and the news that matters - no refresh, no tab-hopping.
+
+The part I care most about is **financial correctness**. Most apps compute a "weekly change" as *price 7 days ago* - a rolling lookback. TickerIO anchors every timeframe to the **period's actual open** (this week's open, this month's open, YTD) in the asset's own session and timezone, DST-aware, the way a prop desk reads it - and the anchored-timeframe math is covered by unit tests.
+
+Under the hood it **aggregates multiple sources** and labels every number's provenance: **Yahoo Finance** (price / OHLCV), **CoinDesk** (crypto news), **FXStreet** (forex news), **Forex Factory** (economic calendar), and **Alternative.me** (crypto Fear & Greed). Live prices **stream over Server-Sent Events**; an AI layer (**Google Gemini**, with a deterministic fallback) writes a plain-language **recap of the latest headlines** - a summary, never a buy/sell signal. Rounding it out: a personal **watchlist**, **price alerts** via browser notifications, a ⌘K **command palette**, a multi-asset **compare** view, drag-to-reorder widgets, and a light/dark "Obsidian Terminal" theme. Built with **Next.js, TypeScript and Tailwind**, animated with **Motion**, and shipped on **Vercel**.
+
+🔗 **[Open TickerIO →](https://ticker-io.vercel.app)**
+
+</details>
+
+<details>
 <summary><b>🚀 MyAnalyst - deeper look</b></summary>
 
 <br>
