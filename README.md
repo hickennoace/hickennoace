@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://danielshaulov.vercel.app"><img src="https://img.shields.io/badge/Portfolio-danielshaulov.vercel.app-2563eb?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://linkedin.com/in/danielshaulov"><img src="https://img.shields.io/badge/LinkedIn-Daniel%20Shaulov-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danielshaulov4@gmail.com"><img src="https://img.shields.io/badge/Email-danielshaulov4@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danielshaulov4@gmail.com"><img src="https://img.shields.io/badge/Email-Reach%20me-ea4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
 <p align="center">
