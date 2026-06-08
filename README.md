@@ -207,7 +207,7 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
 ### 🧗 The path here
 
 ```text
-2020 ──● IDF - Nahal Brigade                         (discipline, operating under pressure)
+2020 ──● IDF - Nahal Brigade                        (discipline, operating under pressure)
 2022 ──● Military-prep program coordinator          (leadership, mentorship)
 2022 ──● Freelance Analyst & Developer  → today     (data analytics, web, plugins)
 2023 ──● Security & access control                  (protocols, reliability)
