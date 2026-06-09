@@ -120,7 +120,7 @@ What sets me apart is how I think: an analytical, numbers-first mind paired with
 
 | Project | The question it answers | Stack |
 |---|---|---|
-| 🚀&nbsp;**[MyAnalyst](https://myanalyst.net)** | Can anyone - with zero BI skill - drop in a spreadsheet and get a clean, fully-explained dashboard *and* an "ask your data" analyst, in seconds? | Next.js · TypeScript · Tailwind · ECharts · client-side analysis engine |
+| 🚀&nbsp;**[MyAnalyst](https://myanalyst.net)** | Can anyone - with zero BI skill - drop in a spreadsheet and get a clean, fully-explained dashboard *and* an "ask your data" analyst, in seconds? | Next.js · TypeScript · Tailwind · ECharts · Python (pandas · statsmodels) backend |
 | 📊&nbsp;**[TickerIO](https://ticker-io.vercel.app)** | Can a trader type one ticker - stock, crypto or forex - and get a live, prop-desk-grade read of the whole asset on a single page? | Next.js · TypeScript · Tailwind · TradingView · SSE · Gemini |
 | 📈&nbsp;**[Ethereum&nbsp;Macro&nbsp;Analysis](https://github.com/hickennoace/Ethereum-Macro-Analysis)** | How does ETH-USD really move (2021–2026) vs. BTC, the NASDAQ-100 & the dollar? | Python · pandas · NumPy · SciPy · yfinance |
 | 🛒&nbsp;**[Craftiverse&nbsp;Customer&nbsp;Behaviour](https://github.com/hickennoace/CustomerBehaviour)** | Where does a store's revenue come from - and where does it *leak*? | Python · SQLite · Power BI |
@@ -137,7 +137,7 @@ What sets me apart is how I think: an analytical, numbers-first mind paired with
 
 On top of that you can **ask your data questions in plain English** (filters, comparisons, *"what's driving revenue?"*) and get an answer with the exact figures, a chart, and a "show the math" trail; **join multiple tables**; build any chart from a prompt; and export a polished PDF report.
 
-The part I'm proudest of is the **privacy-first architecture**: the full analysis engine runs **client-side in the browser** - no backend, your raw rows never leave the page. The optional LLM narrator sits behind a pluggable `InsightProvider` interface, so it only ever sees **schema and small aggregates**, never the underlying records. Built with **Next.js, TypeScript, Tailwind CSS and Apache ECharts**, tested with **Vitest + Playwright**, and shipped on **Vercel**.
+The part I'm proudest of is the **grounding discipline**. A dedicated **Python backend** (pandas · statsmodels · scikit-learn) does *all* the number-crunching - cleaning, KPIs, regression, time-series, segmentation, anomaly detection - and the LLM narrator only ever **writes prose over numbers the engine already computed**, so it can't invent a figure. The model sees only **schema and small aggregates**, never the underlying records. Built with a **Next.js, TypeScript, Tailwind CSS and Apache ECharts** front end over the Python compute service (its own Vercel deployment), tested with **Vitest + Playwright**, and shipped on **Vercel**.
 
 🔗 **[Open MyAnalyst →](https://myanalyst.net)** &nbsp;·&nbsp; **[Source on GitHub →](https://github.com/hickennoace/MyAnalyst)**
 
@@ -250,7 +250,7 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
   <tr>
     <td>🌐&nbsp;Web&nbsp;&amp;&nbsp;product</td>
     <td><b>MyAnalyst</b> - an AI auto-analyst that turns a spreadsheet into a full dashboard, plus my developer portfolio, designed and shipped end to end</td>
-    <td>TypeScript · Next.js</td>
+    <td>TypeScript · Next.js · Python</td>
   </tr>
 </table>
 
