@@ -122,6 +122,7 @@ What sets me apart is how I think: an analytical, numbers-first mind paired with
 | Project | The question it answers | Stack |
 |---|---|---|
 | 🚀&nbsp;**[MyAnalyst](https://myanalyst.net)** | Can anyone - with zero BI skill - drop in a spreadsheet and get a clean, fully-explained dashboard *and* an "ask your data" analyst, in seconds? | Next.js · TypeScript · Tailwind · ECharts · Python (pandas · statsmodels) backend |
+| 🔮&nbsp;**[Churn&nbsp;Prediction&nbsp;Engine](https://github.com/hickennoace/churn-prediction-engine)** | For a subscription business on ~23M real transactions - who's about to churn, how much revenue is at risk, and what to do about it? | Python · PostgreSQL · scikit-learn · FastAPI · Power BI |
 | 📊&nbsp;**[TickerIO](https://ticker-io.vercel.app)** | Can a trader type one ticker - stock, crypto or forex - and get a live, prop-desk-grade read of the whole asset on a single page? | Next.js · TypeScript · Tailwind · TradingView · SSE · Gemini |
 | 📈&nbsp;**[Ethereum&nbsp;Macro&nbsp;Analysis](https://github.com/hickennoace/Ethereum-Macro-Analysis)** | How does ETH-USD really move (2021–2026) vs. BTC, the NASDAQ-100 & the dollar? | Python · pandas · NumPy · SciPy · yfinance |
 | 🛒&nbsp;**[Craftiverse&nbsp;Customer&nbsp;Behaviour](https://github.com/hickennoace/CustomerBehaviour)** | Where does a store's revenue come from - and where does it *leak*? | Python · SQLite · Power BI |
@@ -141,6 +142,19 @@ On top of that you can **ask your data questions in plain English** (filters, co
 The part I'm proudest of is the **grounding discipline**. A dedicated **Python backend** (pandas · statsmodels · scikit-learn) does *all* the number-crunching - cleaning, KPIs, regression, time-series, segmentation, anomaly detection - and the LLM narrator only ever **writes prose over numbers the engine already computed**, so it can't invent a figure. The model sees only **schema and small aggregates**, never the underlying records. Built with a **Next.js, TypeScript, Tailwind CSS and Apache ECharts** front end over the Python compute service (its own Vercel deployment), tested with **Vitest + Playwright**, and shipped on **Vercel**.
 
 🔗 **[Open MyAnalyst →](https://myanalyst.net)** &nbsp;·&nbsp; **[Source on GitHub →](https://github.com/hickennoace/MyAnalyst)**
+
+</details>
+
+<details>
+<summary><b>🔮 Churn Prediction Engine - deeper look</b></summary>
+
+<br>
+
+**An end-to-end churn & revenue engine built on ~23M real KKBox subscription transactions** - the full bridge from raw data to an executive decision. A **PostgreSQL** pipeline ingests and cleans the raw Kaggle data into a relational schema; **advanced SQL** (CTEs + window functions) computes the SaaS economics - **MRR, ARPU, LTV**; and a **calibrated Random-Forest** model scores every active customer **1-100 for churn risk** (**ROC-AUC 0.907**, well-calibrated from a 2.2%-churn bottom band to a 94.8%-churn top band). Results are served two ways: a **FastAPI** read-only API (`/metrics`, `/customers/high-risk`) and a polished **4-page Power BI** dashboard.
+
+The point isn't the model - it's the **decision**. The analysis surfaced that **manual-pay customers churn at 37% vs 5% on auto-renew (~7× higher)** - the single biggest churn lever - and that the riskiest **~10% of customers carry ~NT$13.8M/month** of revenue at risk, which is exactly who to contact first. Built with **Python, PostgreSQL, scikit-learn, FastAPI and Power BI (PBIP/TMDL/DAX)**.
+
+🔗 **[Source on GitHub →](https://github.com/hickennoace/churn-prediction-engine)**
 
 </details>
 
@@ -231,8 +245,8 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
 
 <p align="center">
   <img src="https://img.shields.io/badge/%F0%9F%9A%80%20MyAnalyst-open%20source-7c3aed?style=flat-square">
-  <img src="https://img.shields.io/badge/Public%20projects-7-2563eb?style=flat-square">
-  <img src="https://img.shields.io/badge/Data%20%26%20finance-5%20projects-1f4e79?style=flat-square">
+  <img src="https://img.shields.io/badge/Public%20projects-8-2563eb?style=flat-square">
+  <img src="https://img.shields.io/badge/Data%20%26%20finance-6%20projects-1f4e79?style=flat-square">
   <img src="https://img.shields.io/badge/Web%20%26%20product-2%20projects-3178C6?style=flat-square">
   <img src="https://img.shields.io/badge/Built%20on-real%20datasets-2ea44f?style=flat-square">
 </p>
@@ -245,8 +259,8 @@ A **5-page Power BI report** for *Premium Motors*, a fictional car importer, bui
   </tr>
   <tr>
     <td>🧪&nbsp;Data&nbsp;&amp;&nbsp;finance</td>
-    <td>Macro/crypto regression, customer-revenue analytics, a 7-page crime report, a car-importer revenue model</td>
-    <td>Python · Jupyter · pandas · Power BI · SQL · DAX</td>
+    <td>An end-to-end churn-prediction &amp; revenue engine (ML + API + BI), macro/crypto regression, customer-revenue analytics, a 7-page crime report, a car-importer revenue model</td>
+    <td>Python · Jupyter · pandas · scikit-learn · FastAPI · PostgreSQL · Power BI · SQL · DAX</td>
   </tr>
   <tr>
     <td>🌐&nbsp;Web&nbsp;&amp;&nbsp;product</td>
